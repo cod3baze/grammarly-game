@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: skyblue;
+}
+
+#App {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1200px;
+}
+
+main, aside {
+  flex: 1;
+}
+

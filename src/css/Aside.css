@@ -1,0 +1,18 @@
+/* #87CEED rgb(135, 206, 235)|#87CEEB */
+
+aside {
+  font-size: 18;
+}
+
+aside div.game-word p.word {
+  width: 50px;
+  background: #fff; 
+  padding: 2px 3px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+aside div.game-word p.word:hover {
+  background: rgba(82, 113, 126, 1);
+  color: #FFF;
+}
