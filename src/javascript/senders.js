@@ -1,6 +1,10 @@
 
 const rules = "Cada acerto vale 5 pontos. acertando as duas questões da rodada fica com 10 pontos."
 
+window.onload = () => {
+  
+}
+
 const user = {
   id: Math.random(),
   point: 0,
