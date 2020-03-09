@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/Global.css">
+  <link rel="stylesheet" href="./src/css/App.css">
+  <link rel="stylesheet" href="./src/css/Aside.css">
+  <link rel="stylesheet" href="./src/css/Main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="App">
+
+    <aside>
+      <h2>Palavras</h2>
+      <div class="game-word">
+        <p id="wrd1" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)" class="word">ch</p>
+        <p id="wrd2" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)" class="word">x</p>
+        <p id="wrd3" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)" class="word">j</p>
+        <p id="wrd4" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)" class="word">g</p>
+      </div>
+    </aside>
+
+    <main>
+      <div id="x">
+        <h4>Palavras com X</h4>
+        <div class="game-phases">
+          <p id="enxada" class="phase">en<label id="res" ondragover="allowDrop(event)" ondrop="drop(event)">___</label>ada</p>
+          <!-- <p class="phase">engra<label id="res" ondragover="allowDrop(event)" ondrop="drop(event)"></label>ate</p>
+          <p class="phase">en<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)"></label>ergar</p>
+          <p class="phase">ca<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)"></label>umba</p>
+          <p class="phase">pu<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)"></label>ar</p>
+          <p class="phase"><label id="res" ondragover="allowDrop(event) " ondrop="drop(event)"></label>ingar</p>
+          <p class="phase">pu<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)"></label>ar</p> -->
+        </div>
+      </div>
+      <div class="ch">
+        <h4>Palavras com CH</h4>
+        <div class="game-phases">
+          <p class="phase">fe<label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">___</label>adura</p>
+          <!-- <p class="phase">co<label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>ilar</p>
+          <p class="phase"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>umaço</p>
+          <p class="phase"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>ocalho</p>
+          <p class="phase"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>incho</p>
+          <p class="phase"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>iar</p>
+          <p class="phase">fa<label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>o</p> -->
+        </div>
+      </div>
+      <div class="control">
+        <button id="verificar" type="submit">Verificar</button>
+        <button id="proxima">Rodar</button>
+      </div>
+    </main>
+
+  </div>
+  <script src="./src/javascript/index.js"></script>
+  <script src="./src/javascript/senders.js"></script>
+</body>
+</html>

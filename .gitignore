@@ -1,0 +1,6 @@
+/node_modules
+
+# files with metadatas
+*.log
+*.lock
+*.json
