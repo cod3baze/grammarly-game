@@ -1,0 +1,83 @@
+* {
+  outline: 0;
+}
+
+p {
+  margin: 30px;
+}
+label {
+  color: blue;
+  background: rgb(135, 206, 235, .9);
+}
+
+div#Apk {
+  display: block;
+  margin: 20px auto;
+
+  background: linear-gradient(to right, rgb(255, 2, 23, .9), rgb(135, 206, 235, .9));
+  background-color: transparent;
+
+  max-width: 1000px;
+  height: 500px;
+
+  border: .01px solid grey;
+  text-shadow: .2px .2px;
+  box-shadow: 0 8px 20px 8px rgba(0,0,0, .3);
+  border-radius: 7px;
+
+  padding: 20px;
+  color: #FFF;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+button#show {
+  width: 100px;
+  height: 30px;
+
+  border: .01px solid grey;
+  transition: background 2s ease-in-out;
+}
+button#show:hover {
+  background: linear-gradient(to right, red, rgb(135, 206, 235));
+  color: #FFF;
+
+  text-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2#inst {
+  font-size: 22px;
+  border-bottom: 1px solid darkgray;
+
+  padding: 3px;
+  margin-bottom: 15px;
+
+  text-shadow: 1px 1px 0 darkgray;
+  color: #fff;
+  animation: shising 2s alternate;
+  transform: translate(1%, -1%);
+}
+@keyframes shising{
+  0% {
+    color: #FFFFFF;
+  }
+  20% {
+    box-shadow: 0 0 3vw #fff;
+  }
+  40% {
+    box-shadow: 0 0 3vw #008080;
+  }
+  50%  {
+    color: grey;
+    box-shadow: 0 0 3vw #f13232;
+  }
+  80% {
+    box-shadow: 0 0 3vw #0f9;
+  }
+  100% {
+    color: rgb(135, 206, 235);
+  }
+}
+
+h2 + p {
+  margin-top: 70px;
+}
