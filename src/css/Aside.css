@@ -2,7 +2,7 @@
 
 aside {
   font-size: 18;
-  padding: 20px;
+  padding: 50px 200px;
 }
 
 aside div.game-word p.word {
@@ -42,3 +42,11 @@ label p#wrd4:hover {
   font-weight: bold;
 }
 
+div.game-time {
+  margin-top: 90px;
+  background: #DADADA;
+
+  width: 140px;
+  border-radius: 4px;
+  padding: 2px 10px;
+}

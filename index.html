@@ -15,7 +15,7 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="Apk" style="display: none;">
+  <!-- <div id="Apk" style="display: none;">
     <h2 id="inst" style="text-align: center;">INTRODUÇÃO</h2>
     <p>
       <label>GRAMMARLY®</label> é um jogo de palavras desenvolvido para trabalho de gramática. 
@@ -26,24 +26,27 @@
     <p>
     <label>Como jogar</label>: Cada jogada é dividido por set, cada set contém 7 palavras de cada chave podendo verificar com os controles exibidos.
     </p>
-  </div>
+  </div> -->
   <button id="show" >Show</button>
 
   <div id="App">
 
     <aside>
-      <h2>Palavras</h2>
+      <h2>Chaves</h2>
       <div class="game-word">
         <p id="wrd1" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)" class="word">ch</p>
         <p id="wrd2" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)" class="word">x</p>
         <p id="wrd3" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)" class="word">j</p>
         <p id="wrd4" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)" class="word">g</p>
       </div>
+      <div class="game-time">
+        <label style="display: inline;" for="time">Tempo: </label> <p style="display: inline;" id="time">00:00:00</p>
+      </div>
     </aside>
 
     <main>
       <div id="x">
-        <h4>Palavras com X</h4>
+        <!-- <h4>Palavras com X</h4> -->
         <div class="game-phases">
           <p id="enxada" class="phase">en<label id="res" ondragover="allowDrop(event)" ondrop="drop(event)">___</label>ada</p>
           <!-- <p class="phase">engra<label id="res" ondragover="allowDrop(event)" ondrop="drop(event)"></label>ate</p>
@@ -55,7 +58,7 @@
         </div>
       </div>
       <div class="ch">
-        <h4>Palavras com CH</h4>
+        <!-- <h4>Palavras com CH</h4> -->
         <div class="game-phases">
           <p class="phase">fe<label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">___</label>adura</p>
           <!-- <p class="phase">co<label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>ilar</p>
@@ -71,10 +74,18 @@
         <button id="proxima">Rodar</button>
       </div>
     </main>
-
   </div>
+
+  <footer>
+    <br> <br> <br> <br>
+    <br> <br> <br> <br>
+    <a target="_blank" style="color: grey" href="https://github.com/eliasallex">&copy; Elias Alexandre</a><br>
+    <a target="_blank" style="color: grey" href="https://github.com/eliasallex">&copy; Gabriel Castro</a>
+  </footer>
+
   <script src="./src/javascript/index.js"></script>
   <script src="./src/javascript/senders.js"></script>
   <script src="./src/javascript/show.js"></script>
+  <script src="./src/javascript/time.js"></script>
 </body>
 </html>
