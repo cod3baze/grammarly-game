@@ -1,3 +1,3 @@
 # PLAY WITH WORDS
 
-- [X]
+![Game with photo](C:\Users\Windows 10 Pro\Desktop\grammarly\.image)
