@@ -5,4 +5,4 @@
 *.lock
 *.json
 
-*.image
+# *.image
