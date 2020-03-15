@@ -1,6 +1,11 @@
 const apk = document.querySelector("div#Apk")
 const show = document.querySelector("button#show")
 
+const test = () => {
+  apk.style.display = "block"
+}
+
+setTimeout(test, 2000)
 
 const handle_click = () => {
   const x = apk.style.display == "block" ? true : false

@@ -2,12 +2,16 @@
   outline: 0;
 }
 
-p {
+div#Apk p {
   margin: 30px;
+  padding-bottom: 60px;
 }
-label {
+div#Apk label {
   color: blue;
   background: rgb(135, 206, 235, .9);
+
+  border-radius: 4px;
+  padding: 2px 8px;
 }
 
 div#Apk {
@@ -35,7 +39,9 @@ button#show {
   height: 30px;
 
   border: .01px solid grey;
-  transition: background 2s ease-in-out;
+  transition: color 2s ease-in-out;
+
+  cursor: pointer;
 }
 button#show:hover {
   background: linear-gradient(to right, red, rgb(135, 206, 235));
