@@ -1,3 +1,3 @@
 # PLAY WITH WORDS
 
-![Game with photo](./.image/init.PNG)
+![Game with photo.](./.image/init.PNG)
