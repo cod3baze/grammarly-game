@@ -23,11 +23,3 @@ const handle_update_time = () => {
 }
 
 const id = setInterval(handle_update_time, 1000)
-
-const result = {
-  id: 0,
-  tmp: 0,
-  pontuacao: 0,
-  certas: 0,
-  erradas: 0
-}

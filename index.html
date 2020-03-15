@@ -26,6 +26,9 @@
     <p>
     <label>Como jogar</label>: Cada jogada é dividido por set, cada set contém 7 palavras de cada chave podendo verificar com os controles exibidos.
     </p>
+    <p>
+      <label>Resultado</label>: Cada acerto vale 5 pontos. acertando as duas questões da rodada fica com 10 pontos.
+    </p>
   </div> -->
   <button id="show" >Show</button>
 
@@ -42,6 +45,16 @@
       <div class="game-time">
         <label style="display: inline;" for="time">Tempo: </label> <p style="display: inline;" id="time">00:00:00</p>
       </div>
+      <div id="result" style="display: none;">
+        <ul>
+          <li>ID Jogador: <label id="user"></label></li>
+          <hr>
+          <li>Tempo: <label id="tempo"></label></li>
+          <li>Certas: <label id="certas"></label></li>
+          <li>Erradas: <label id="erradas"></label></li>
+          <li>Total pontuação: <label id="total"></label></li>
+        </ul>
+      </div>
     </aside>
 
     <main>
@@ -49,24 +62,24 @@
         <!-- <h4>Palavras com X</h4> -->
         <div class="game-phases">
           <p id="enxada" class="phase">en<label id="res" ondragover="allowDrop(event)" ondrop="drop(event)">___</label>ada</p>
-          <!-- <p class="phase">engra<label id="res" ondragover="allowDrop(event)" ondrop="drop(event)"></label>ate</p>
-          <p class="phase">en<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)"></label>ergar</p>
-          <p class="phase">ca<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)"></label>umba</p>
-          <p class="phase">pu<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)"></label>ar</p>
-          <p class="phase"><label id="res" ondragover="allowDrop(event) " ondrop="drop(event)"></label>ingar</p>
-          <p class="phase">pu<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)"></label>ar</p> -->
+          <p id="engraxate" class="phase">engra<label id="res" ondragover="allowDrop(event)" ondrop="drop(event)">___</label>ate</p>
+          <p id="enxergar" class="phase">en<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)">___</label>ergar</p>
+          <p id="caxumba" class="phase">ca<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)">___</label>umba</p>
+          <p id="puxar" class="phase">pu<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)">___</label>ar</p>
+          <p id="xingar" class="phase"><label id="res" ondragover="allowDrop(event) " ondrop="drop(event)">___</label>ingar</p>
+          <p id="graxa" class="phase">gra<label id="res" ondragover="allowDrop(event) " ondrop="drop(event)">___</label>a</p>
         </div>
       </div>
       <div class="ch">
         <!-- <h4>Palavras com CH</h4> -->
         <div class="game-phases">
-          <p class="phase">fe<label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">___</label>adura</p>
-          <!-- <p class="phase">co<label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>ilar</p>
-          <p class="phase"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>umaço</p>
-          <p class="phase"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>ocalho</p>
-          <p class="phase"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>incho</p>
-          <p class="phase"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>iar</p>
-          <p class="phase">fa<label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">&nbsp;</label>o</p> -->
+          <p id="fechadura" class="phases">fe<label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">___</label>adura</p>
+          <p id="cochilar" class="phases">co<label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">___</label>ilar</p>
+          <p id="chumaço" class="phases"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">___</label>umaço</p>
+          <p id="chocalho" class="phases"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">___</label>ocalho</p>
+          <p id="chincho" class="phases"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">___</label>incho</p>
+          <p id="chiar" class="phases"><label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">___</label>iar</p>
+          <p id="facho" class="phases">fa<label ondragover="allowDrop(event)" ondrop="drop(event)" id="resch">___</label>o</p>
         </div>
       </div>
       <div class="control">
